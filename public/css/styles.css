@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #030303;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 25%;
+}
+
+.error {
+    text-align: center;
+    font-size: 12px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+
+.nav {
+    height: 66px;
+    background-color: #1A1A1B;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    border-bottom: 1px solid #343434;
+    margin-bottom: 20px;
+}
+
+.nav > a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    text-decoration: none;
+}
+
+.nav-btns {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-btn {
+    font-family: inherit;
+    margin-left: 10px;
+    border: none;
+    font-size: 14px;
+    color: #f3f3f3;
+    background-color: #2492ff;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-btn > a {
+    text-decoration: none;
+    color: #f3f3f3;
+}
+
+/* Post page */
+
+.post {
+    display: flex;
+    background-color: #1A1A1B;
+    width: 100%;
+    border: 1px solid #343434;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.post:hover {
+    border: 1px solid #545454;
+}
+
+.postContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.postAnchor {
+    text-decoration: none;
+}
+
+.postAuthor {
+    color: #f3f3f3;
+    font-size: 12px;
+    padding: 10px 0 0 10px;
+}
+
+.postTitle {
+    color: #f3f3f3;
+    padding: 5px 10px 10px 10px;
+
+}
+
+.postRating {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #181717;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.postRatingScore {
+    color: #f3f3f3;
+    margin-bottom: 5px;
+}
+
+.likeIcon {
+    display: flex;
+     background-color: transparent;
+     border: none;
+     margin-bottom: 5px;
+     cursor: pointer;
+ }
+
+.likeIcon > i {
+    font-size: 16px;
+    color: #f3f3f3;
+}
+
+.likeIcon > i:hover {
+    color: #62cb62;
+}
+
+.liked > i {
+    color: #62cb62;
+}
+
+.dislikeIcon {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dislikeIcon > i {
+    font-size: 16px;
+    color: #f3f3f3;
+}
+
+.dislikeIcon > i:hover {
+    color: #c45858;
+}
+
+.disliked > i {
+    color: #c45858;
+}
+
+/* Log in/registration page */
+
+.authContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.authForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #343434;
+    border-radius: 10px;
+    background-color: #1A1A1B;
+    padding: 80px;
+    width: 380px;
+}
+
+.authForm > h1 {
+    color: #f3f3f3;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.authForm > button, input {
+    height: 40px;
+    width: 240px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.authForm > input {
+    padding: 5px;
+    background-color: #343434;
+    border: 1px solid #343434;
+}
+
+.authForm > input:focus, input:hover {
+    outline: none;
+    border: 1px solid #030303;
+}
+
+.authForm > input::placeholder {
+    font-family: inherit;
+    color: #f3f3f3;
+}
+
+.authForm > .notRegistered, .authForm > .alreadyRegistered {
+    font-size: 12px;
+}
+
+.authForm > button {
+    font-family: inherit;
+    background-color: #2492ff;
+    border: 1px solid #2492ff;
+    color: #f3f3f3;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.authForm > button:hover {
+    font-size: 14px;
+    border: 1px solid #0057b0;
+}
+
+.notRegistered > a, .alreadyRegistered > a {
+    color: #2492ff;
+}
+
+/* Post page */
+
+.showPostContainer {
+    background-color: #1A1A1B;
+    border: 1px solid #343434;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.showPostContent {
+    margin-bottom: 20px;
+}
+
+.showPostContent > p {
+    font-size: 12px;
+    color: #9b9b9b;
+}
+
+.showPostContent > h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f3f3f3;
+}
+
+.showPostContent > .showPostBody {
+    font-size: 14px;
+    color: #f3f3f3;
+}
+
+.commentForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentForm > textarea {
+    background-color: #f3f3f3;
+    resize: none;
+    border: 1px solid #343434;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.commentForm > button {
+    font-family: inherit;
+    color: #f3f3f3;
+    background-color: #2492ff;
+    border: 1px solid #2492ff;
+    padding: 5px 15px;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.commentForm > button:hover {
+    border: 1px solid #0057b0;
+}
+
+.commentList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comment {
+    border-left: 1px solid #343434;
+    padding: 10px;
+}
+
+.comment > .commentAuthor {
+    font-size: 12px;
+    color: #9b9b9b;
+}
+
+.comment > .commentBody {
+    font-size: 14px;
+    color: #f3f3f3;
+}
+
+/* New Post */
+
+.createPostContainer {
+    background-color: #1A1A1B;
+    border: 1px solid #343434;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.createPostForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.createPostForm > input {
+    border-radius: 10px;
+    border: none;
+    background-color: #f3f3f3;
+    padding-left: 10px;
+    height: 40px;
+    width: 50%;
+}
+
+.createPostForm > input:focus {
+    outline: none;
+}
+
+.createPostForm > textarea {
+    border: none;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    resize: none;
+    height: 240px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.createPostForm > textarea:focus {
+    outline: none;
+}
+
+.createPostForm > button {
+    font-family: inherit;
+    color: #f3f3f3;
+    background-color: #2492ff;
+    border: 1px solid #2492ff;
+    padding: 5px 15px;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.createPostForm > button:hover {
+    border: 1px solid #0057b0;
+}
+
+.createPostForm > .error {
+    text-align: left;
+}
